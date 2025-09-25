@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="container">
+       <!-- search section -->
+      <div class="search-section">
+        <div class="input-wrapper">
+          <span class="material-symbols-rounded">search</span>
+          <input type="search" placeholder="Enter city name" class="search-input"/>
+        </div>
+        <button class="location-button">
+          <span class="material-symbols-rounded">my_location</span>
+        </button>
+      </div>
+
+       <!-- weather section -->
+       <div class="weather-section">
+        <div class="current-weather">
+          <img src="Images/sun.png" class="weather-icon" alt="weather icon" />
+          <h2 class="temperature">00<span>°C</span></h2>
+          <p class="description">Weather Description</p></p>
+        </div>
+
+        <div class="hourly-weather">
+          <ul class="weather-list"></ul>
+        </div>
+       </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
