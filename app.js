@@ -60,7 +60,6 @@ const getWeatherDetails = async (API_URL) => {
 
     searchInput.value = data.location.name;
   } catch (error) {
-    document.body.classList.add("no-results")
     console.log("Invalid city name.");
   }
 };
